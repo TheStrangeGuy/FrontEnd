@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power JS</title>
+</head>
+<body>
+<body>
+<input type="text" id="a">
+<input type="button" onclick="a1()" value="Click me">
+<script>
+function a1()
+{
+var x=parseInt(document.getElementById('a').value);
+var y=parseInt(x/10);
+var z=x%10;
+var res=Math.pow(y,z);
+window.alert(res);
+}
+</script>   
+</body>
+</html>

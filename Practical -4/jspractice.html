@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+</head>
+<body id="bd" bgcolor="aqua">
+    <p id="inhtml">Text from p.</p>
+    <img src="9.png" id="chngimg" height="100px" width="100px">
+    <br><br>
+    <input type="button" value="Add Text" onclick="inhtml()">
+    <br><br>
+    <input type="button" value="Change BG Color" onclick="bg()">
+    <br><br>
+    <input type="button" value="Change Image" onclick="chngimg()">
+    <script type="text/javascript">
+        function inhtml(){
+            document.getElementById('inhtml').innerHTML+="Text from InnerHTML.";
+        }
+        function bg(){
+            document.getElementById('bd').bgColor="red";
+        }
+        function chngimg(){
+            document.getElementById('chngimg').src="6.jpg";
+        }
+    </script>
+</body>
+</html>

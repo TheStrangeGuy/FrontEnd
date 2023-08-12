@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript OP</title>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td>Enter value of A : <input id="a" type="number" placeholder="Enter A"></td>
+        </tr>
+        <tr>
+            <td>Enter value of B : <input id="b" type="number" placeholder="Enter B"></td>
+        </tr>
+        <tr>
+            <td>
+            <input type="button" value="+" onclick="sum()">&emsp;&emsp;&ensp;
+            <input type="button" value="-" onclick="sub()">&emsp;&emsp;&ensp;
+            <input type="button" value="*" onclick="mul()">&emsp;&emsp;&ensp;
+            <input type="button" value="/" onclick="div()">&emsp;&emsp;&ensp;
+            <input type="button" value="%" onclick="mod()"></td>
+        </tr>
+    </table>
+    <p id="result"></p>
+    <script type="text/javascript">
+    function sum()
+    {
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+        var c = a + b;
+        document.getElementById('result').innerHTML=" Addition is : " + c ;
+    }
+    function sub()
+    {
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+        var c = a - b;
+        document.getElementById('result').innerHTML=" Subtraction is : " + c ;
+    }
+    function mul()
+    {
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+        var c = a * b;
+        document.getElementById('result').innerHTML=" Multplication is : " + c ;
+    }
+    function div()
+    {
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+        var c = a / b;
+        document.getElementById('result').innerHTML=" Division is : " + c ;
+    }
+    function mod()
+    {
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+        var c = a % b;
+        document.getElementById('result').innerHTML=" Remainder is : " + c ;
+    }
+    </script>
+</body>
+</html>

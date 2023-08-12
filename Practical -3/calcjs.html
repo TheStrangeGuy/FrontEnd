@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator in JS</title>
+<script type="text/javascript">
+function display(x)
+{
+calc.txt.value= calc.txt.value+x;
+}
+</script>
+</head>
+<body>
+<form name="calc">
+<table name="badal" align="center" margin="500" border="1" cellspacing="5"
+cellpadding="5">
+<tr>
+<td>
+<input type="text" name="txt">
+</td>
+<td>
+<input type="button" value="c" name="c" onclick="txt.value=''" />
+</td>
+</tr>
+<tr>
+<td>
+<input type="button" value="1" name="b1" onclick="display(b1.value)" />
+<input type="button" value="2" name="b2" onclick="display(b2.value)" />
+<input type="button" value="3" name="b3" onclick="display(b3.value)" />
+<input type="button" value="+" name="pls" onclick="display(pls.value)" />
+<input type="button" value="/" name="div" onclick="display(div.value)" />
+</td>
+</tr>
+<tr>
+<td>
+<input type="button" value="4" name="b4" onclick="display(b4.value)" />
+<input type="button" value="5" name="b5" onclick="display(b5.value)" />
+<input type="button" value="6" name="b6" onclick="display(b6.value)" />
+<input type="button" value="-" name="minus" onclick="display(minus.value)" />
+<input type="button" value="=" name="equ"
+onclick="txt.value=eval(calc.txt.value)" />
+</td>
+</tr>
+<tr>
+<td>
+<input type="button" value="7" name="b7" onclick="display(b7.value)" />
+<input type="button" value="8" name="b8" onclick="display(b8.value)" />
+<input type="button" value="9" name="b9" onclick="display(b9.value)" />
+<input type="button" value="0" name="b0" onclick="display(b0.value)" />
+<input type="button" value="*" name="mul" onclick="display(mul.value)" />
+</td>
+</tr>
+</table>
+</form>
